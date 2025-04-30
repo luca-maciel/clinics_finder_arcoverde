@@ -34,9 +34,7 @@ workbook.create_sheet(title="clinicas")
 # workbook.save(filename="clinicas")
 
 
-dados = [
-
-]
+dados = []
 
 
 for clinica in clinicas:
