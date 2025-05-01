@@ -4,7 +4,6 @@ from time import sleep
 import pyautogui as pg
 import openpyxl as opxl
 
-
 nav = webdriver.Chrome(keep_alive=True)
 
 nav.get("https://www.google.com.br/maps/search/clinica/@-8.4226488,-37.0765385,14z?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D")
@@ -32,9 +31,7 @@ workbook = opxl.Workbook()
 workbook.create_sheet(title="clinicas")
 # workbook.save(filename="clinicas")
 
-
 dados = []
-
 
 for clinica in clinicas:
     nome = clinica.accessible_name 
@@ -44,6 +41,5 @@ for clinica in clinicas:
 
 for dado in dados:
     workbook["clinicas"].append(dado)
-
 
 workbook.save("clinicasTeste.xlsx")
