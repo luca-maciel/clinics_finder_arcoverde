@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import pyautogui as pg
-import pandas as pd
 import openpyxl as opxl
 
 
